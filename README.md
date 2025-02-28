@@ -61,4 +61,3 @@ g++ cart_main.cpp -o main.exe
 - `main.exe` → Executable file
 
 ---
-# Shopping Cart Backend
