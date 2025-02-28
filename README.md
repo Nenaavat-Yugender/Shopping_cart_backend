@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SHOPPING CART BACKEND 
 not a UI, it is  a command line based app
 
@@ -54,3 +55,6 @@ Cart |-->items|-->Quantity   |-->price         item = tells which product and qu
  Explanation of Each Part:
   ./ → Tells the terminal to run cart_main.exe from the current directory.
   main.exe → The compiled executable file. 
+=======
+# Shopping_cart_backend
+>>>>>>> 01c72e83814f9d828de21701661db6792af68740
