@@ -1,60 +1,64 @@
-<<<<<<< HEAD
-# SHOPPING CART BACKEND 
-not a UI, it is  a command line based app
+# Shopping Cart Backend
 
-will learn interactions between different classes and objects  
-concepts used:
- -> Data Structures
- -> OPP's
- -> making different entities
-in this cart=> cart has items,Each item has quantity
+A **command-line based app** (not a UI) to learn interactions between different classes and objects.
 
-Feature are:
- 1.allow user view the products
- 2.allow user to add products and check quantity 
- 3.allow user to checkout and view total amount
+## Concepts Used
+- **Data Structures**
+- **OOP (Object-Oriented Programming)**
+- **Creating different entities**
 
--Each product will have it's 
-   -id
-   -name
-   -price
+### Cart Structure
+- A **cart** contains multiple **items**.
+- Each **item** has a **quantity** and is linked to a **product**.
 
--Each item will have it;s
-  -product
-  -Quantity
-  -price
+## Features
+1. **View Products** – Allows users to see available products.
+2. **Add Products & Check Quantity** – Users can add products to the cart and verify quantity.
+3. **Checkout & View Total** – Displays the total amount to be paid.
 
-Each cart will have
-  -item
-  -Total
+## Entities
+### Product
+Each product has:
+- **ID**
+- **Name**
+- **Price**
 
+### Item
+Each item has:
+- **Product**
+- **Quantity**
+- **Price**
 
-                             |-->id            cart = collection of items
-   --|       -|-->product--->|-->name          product = things we buy from the shop(apple,banana,watermelon....)
-Cart |-->items|-->Quantity   |-->price         item = tells which product and quantity of that product.
+### Cart
+Each cart has:
+- **Items**
+- **Total Price**
+
+## Entity Relationships
+```
+                             |--> ID            Cart = Collection of Items
+   --|       -|--> Product-->|--> Name          Product = Things we buy from the shop (e.g., Apple, Banana, Watermelon...)
+Cart |--> Items|--> Quantity |--> Price         Item = Represents a product and its quantity.
    --|       -|
+```
 
+## Compilation & Execution
+### 1. Compilation Command
+```sh
+g++ cart_main.cpp -o main.exe
+```
+**Explanation:**
+- `g++` → GNU C++ Compiler
+- `cart_main.cpp` → C++ source file
+- `-o main.exe` → Generates an executable file `main.exe`
 
+### 2. Running the Executable
+```sh
+./main.exe
+```
+**Explanation:**
+- `./` → Runs the program from the current directory
+- `main.exe` → Executable file
 
-1. Compilation Command:
-   # g++ cart_main.cpp -o main.exe
- This command compiles your C++ source code into an executable file.
-
- Explanation of Each Part:
-  g++ → Calls the GNU C++ Compiler to compile the code.
-  cart_main.cpp → Your C++ source file that contains the code.
-  -o main.exe → Specifies the output filename for the compiled executable.
-  -o stands for "output".
-  main.exe is the name of the generated executable file (Windows uses .exe for executables).
-
-2. Running the Executable:
-   # ./main.exe
-
- This runs the compiled program.
-
- Explanation of Each Part:
-  ./ → Tells the terminal to run cart_main.exe from the current directory.
-  main.exe → The compiled executable file. 
-=======
-# Shopping_cart_backend
->>>>>>> 01c72e83814f9d828de21701661db6792af68740
+---
+# Shopping Cart Backend
